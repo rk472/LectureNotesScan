@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    tools:context=".AllStartActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom|center"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="55sp"
+            android:text="Brust Shot"
+            android:id="@+id/brust_btn"
+            android:onClick="brust"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="200sp"
+            android:id="@+id/our_btn"
+            android:layout_height="55sp"
+            android:text="Single Shot"
+            android:onClick="start"/>
+    </LinearLayout>
+</LinearLayout>
